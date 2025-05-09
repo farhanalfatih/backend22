@@ -3,6 +3,7 @@ const { createTransaction, paymentWebhook } = require('../controllers/midtransCo
 const router = express.Router();
 
 // Buat invoice baru
+// POST /api/payment/create
 router.post('/create', createTransaction);
 
 // Webhook Midtrans (otomatis dipanggil Midtrans)
