@@ -7,6 +7,7 @@ const router = express.Router();
 router.post('/create', createTransaction);
 
 // Webhook Midtrans (otomatis dipanggil Midtrans)
+// POST /api/payment/webhook
 router.post('/webhook', paymentWebhook);
 
 module.exports = router;
